@@ -3,6 +3,6 @@
 # command is used to print the current item.
 function(project_log list_to_print)
     foreach(item IN LISTS ${list_to_print})
-        message("[${PROJECT_NAME}] ${item}")
+        message(STATUS "[${PROJECT_NAME}] ${item}")
     endforeach()
 endfunction()

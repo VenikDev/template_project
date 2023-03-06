@@ -10,4 +10,7 @@ list of all ".cpp" and ".h" files in the current directory and its subdirectorie
 file(GLOB_RECURSE CPP_FILES "*.cpp")
 file(GLOB_RECURSE HPP_FILES "*.h")
 
+project_log(CPP_FILES)
+project_log(HPP_FILES)
+
 add_executable(${PROJECT_NAME} ${CPP_FILES} ${HPP_FILES})
